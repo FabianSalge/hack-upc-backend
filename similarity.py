@@ -4,7 +4,6 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import numpy as np
 
 # Initialize Pinecone
-api_key = 'faa1130a-e226-47bd-8a94-a172fc46a5e2'
 pc = Pinecone(api_key=api_key)
 index_name = 'caption-vectors'
 if index_name not in pc.list_indexes().names():
